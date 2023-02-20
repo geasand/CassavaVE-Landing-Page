@@ -1,0 +1,175 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  background-color: #efefef;
+}
+
+#topbar {
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+  background-color: chocolate;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: gray;
+  font-weight: 300;
+  padding: 0.5em 1.5em;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: column;
+}
+
+.menu {
+  position: sticky;
+  top:0;
+  margin: 0 1em auto 0;
+  width: column;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #fff;
+  color: gray;
+  padding: 0 2em 0 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 20px;
+}
+
+li a:link {
+  transition: font-weight 0.3s ease;
+  color: grey;
+  text-decoration: none;
+  font-size: 24px; 
+}
+
+li a:hover {
+  color: darkslategray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 20px;
+  
+
+}
+
+.contact .rrss {
+  color: brown;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight:bold;
+}
+
+/*Product section*/
+.wrapper {
+  width: column;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 30px 0 30px 20px;
+}
+
+/*Product cards*/
+.producto {
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 280px;
+  margin: 0;
+  border-radius: 0.5em;
+  padding: 0.25em 0;
+  cursor: pointer;
+}
+
+section article:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3)
+}
+
+section article h2, section article p {
+  margin: 1rem;
+}
+
+.producto img {
+  padding: 0;
+  width: 100%;
+  height: 55%;
+}
+
+.buy {
+  margin: 1rem;
+  padding: 0.25rem 1rem;
+  background: #3ea0e2;
+  color: #fff;
+  font-weight: medium;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.buy:hover {
+  transform: scale(0.97);
+  cursor: pointer;
+}
+
+/*Footer*/
+footer {
+  /*background-color: #CDCDCD;*/
+  background-color: rgba(255, 174, 0, 0.842);
+  padding: 3rem;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight:bold;
+  float: right;
+}
+
+footer p {
+  margin:0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center
+}
