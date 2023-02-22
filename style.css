@@ -3,14 +3,14 @@ html {
 }
 
 body {
-  width:100%;
+  width: 100%;
   height:100%;
   margin: 0;
   background-color: #efefef;
+  overflow-x: hidden;
 }
 
 #topbar {
-  margin: 0;
   padding: 10px;
   text-align: right;
   background-color: chocolate;
@@ -25,7 +25,6 @@ header {
   color: gray;
   font-weight: 300;
   padding: 0.5em 1.5em;
-  margin: 0;
 }
 
 .main {
@@ -50,6 +49,7 @@ header {
 }
 
 .main-container {
+  margin: 0;
   display: grid;
   grid-template-columns: 25% 75%;
   gap: 20px;
@@ -63,7 +63,7 @@ li a:link {
 }
 
 li a:hover {
-  color: darkslategray;
+  color: chocolate;
   text-decoration: none;
   font-weight: bold;
 }
@@ -86,15 +86,19 @@ ul {
   justify-content: space-evenly;
   align-content: center;
   padding: 20px;
-  
-
 }
 
 .contact .rrss {
   color: brown;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 30px;
   font-weight:bold;
+  transition: all 0.3s ease;
+}
+
+.contact .rrss:hover {
+  transform: scale(0.93);
+  color: chocolate;
 }
 
 /*Product section*/
@@ -153,7 +157,7 @@ section article h2, section article p {
 
 /*Footer*/
 footer {
-  /*background-color: #CDCDCD;*/
+  margin: 9;
   background-color: rgba(255, 174, 0, 0.842);
   padding: 3rem;
   color: #fff;
