@@ -62,7 +62,7 @@ header {
   flex-direction: column;
 }
 
-li a:link {
+li a {
   transition: font-weight 0.3s ease;
   color: grey;
   text-decoration: none;
@@ -109,7 +109,7 @@ ul {
 }
 
 /*Product section*/
-.wrapper-product-section {
+#product {
   width: column;
   margin: 0;
   gap: 20px;
@@ -132,13 +132,15 @@ ul {
 }
 
 /*About section*/
-.wrapper-about-section {
+#about {
   width: column;
   margin: 0;
   padding: 30px 60px;
   text-align: left;
   background-color: #fff;
+  display: none;
 }
+
 
 .wrapper-about-section img {
   width: 250px;

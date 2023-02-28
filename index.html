@@ -30,13 +30,13 @@
     <aside class= "menu">
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html" onclick="clickOnMain()">Inicio</a></li>
           <hr>
-          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="#" onclick="clickOnAbout()">Nosotros</a></li>
           <hr>
-          <li><a href="#">Productos</a></li>
+          <li><a href="#" onclick="clickOnProducts()">Productos</a></li>
           <hr>
-          <li><a href="#">Servicios</a></li>
+          <li><a href="#" onclick="clickOnServices()">Servicios</a></li>
         </ul>
       </nav>
 
@@ -52,7 +52,7 @@
     <div class="wrapper">
 
       <!--Product section -->
-      <section class= "wrapper-product-section">
+      <section id="product" class= "wrapper-product-section">
           <article class= "producto">
             <img src="images/bunuelos.jpg" alt="ImgArticulo">
             <h2>Producto 1</h2>
@@ -92,7 +92,7 @@
       </section>
 
       <!--About section-->
-      <section class= "wrapper-about-section">
+      <section id="about" class= "wrapper-about-section">
 
         <h1>La Empresa</h1>
         <img src="images/cassavave.ico" alt="Logo Cassava">
@@ -130,7 +130,7 @@
     <p>Desarrollado por Gea Codes - 2022</p>
   </footer>
   
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
   <script src="https://kit.fontawesome.com/93e6ae4d8e.js" crossorigin="anonymous"></script>
 
 </body>
