@@ -4,32 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Cassava Café</title>
+  <title>Cassava's Café</title>
   <link rel="icon" type="image/x-icon" href="/images/cassavave.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   
-  <!--Barra superior --> 
+  <!-- Topbar --> 
   <form id="topbar">
-    <!--<label>Buscar</label>-->
+    <!--Search-->
     <input type="search" id="search" name="search" placeholder="Buscar">
     <button type="button">🔍︎</button>
   </form>
 
-<!--Encabezado (Logo y titulo)--> 
+<!--Header (Logo and title)--> 
   <header>
-    <img class="logo" src="Images/logo.png" width="300" alt="logotipo">
+    <img class="logo" src="images/logo.png" width="300" alt="logotipo">
     <i>Es de cassava</i>
   </header>
 
   <section class="main-container">
-    <!--Menu de navegacion-->
+    <!--Nav menu-->
     <aside class= "menu">
       <nav>
         <ul>
@@ -52,45 +49,77 @@
       </div>
     </aside>
 
-    <!--Tarjetas de productos-->
-    <section class= "wrapper">
-        <article class= "producto">
-          <img src="images/bunuelos.jpg" alt="ImgArticulo">
-          <h2>Producto 1</h2>
-          <p>Descripción</p>
-          <button class="buy">Ver más</button>
-        </article>
-      
-        <article class= "producto">
-          <img src="images/glaseados.jpg" alt="ImgArticulo">
-          <h2>Producto 2</h2>
-          <p>Descripción</p>
-        </article>
-      
-        <article class= "producto">
-          <img src="images/empanadas.jpg" alt="ImgArticulo">
-          <h2>Producto 3</h2>
-          <p>Descripción</p>
-        </article>
+    <div class="wrapper">
 
-        <article class= "producto">
-            <img src="images/pizza.jpg" alt="ImgArticulo">
-            <h2>Producto 4</h2>
+      <!--Product section -->
+      <section class= "wrapper-product-section">
+          <article class= "producto">
+            <img src="images/bunuelos.jpg" alt="ImgArticulo">
+            <h2>Producto 1</h2>
+            <p>Descripción</p>
+            <button class="buy">Ver más</button>
+          </article>
+        
+          <article class= "producto">
+            <img src="images/glaseados.jpg" alt="ImgArticulo">
+            <h2>Producto 2</h2>
             <p>Descripción</p>
           </article>
-      
-        <article class= "producto">
-            <img src="images/pizza2.jpg" alt="ImgArticulo">
-            <h2>Producto 5</h2>
+        
+          <article class= "producto">
+            <img src="images/empanadas.jpg" alt="ImgArticulo">
+            <h2>Producto 3</h2>
             <p>Descripción</p>
           </article>
-      
-        <article class= "producto">
-            <img src="images/churros.jpg" alt="ImgArticulo">
-            <h2>Producto 6</h2>
-            <p>Descripción</p>
-              </article>
-    </section>
+
+          <article class= "producto">
+              <img src="images/pizza.jpg" alt="ImgArticulo">
+              <h2>Producto 4</h2>
+              <p>Descripción</p>
+            </article>
+        
+          <article class= "producto">
+              <img src="images/pizza2.jpg" alt="ImgArticulo">
+              <h2>Producto 5</h2>
+              <p>Descripción</p>
+            </article>
+        
+          <article class= "producto">
+              <img src="images/churros.jpg" alt="ImgArticulo">
+              <h2>Producto 6</h2>
+              <p>Descripción</p>
+                </article>
+      </section>
+
+      <!--About section-->
+      <section class= "wrapper-about-section">
+
+        <h1>La Empresa</h1>
+        <img src="images/cassavave.ico" alt="Logo Cassava">
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <p>
+          Desde 2017 la empresa Cassava's Café C.A, nos hemos encargado de producir y comercializar los mejores alimentos a base de yuca con el fin de consolidarnos como empresa líder en el mercado nacional e internacional, con productos de calidad en su sabor, aroma y textura, logrando llenar las expectativas del consumidor.
+        </p>
+
+        <h2>Misión</h2>
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <p>
+          Elaborar de manera innovadora alimentos y dulces del recetario criollo e internacional enfocados en ofrecer a nuestros clientes derivados de óptima calidad obtenidos a través de procesos efectivos de transformación de materia prima de producción local y foránea con permanente y sistemático aprendizaje organizacional, basado en la investigación y desarrollo de métodos y técnicas que nos proporcionen herramientas para ser más proactivos, creativos, productivos y felices; beneficiando tanto a nuestro talento humano como a sus familias, con firme apego a las leyes, valores y principios.
+        </p>
+        <h2>Visión</h2>
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <p>
+          Seremos una empresa:<br>
+        <ul></ul>
+          <li>Líder en procesos de elaboración de alimentos y dulces del recetario nacional e internacional</li><br>
+          <li>Equipada con tecnología actualizada que nos permita ser más rápidos y efectivos</li><br>
+          <li>Con estructura y sistemas adaptables en permanente actualización para brindar óptima calidad y superar las exigencias de nuestros clientes.</li><br>
+          <li>Integrada por un excelente equipo de profesionales, técnicos y artesanos satisfechos, creativos y proactivos que ven el trabajo como estímulo para dominar nuevos retos de producción, crecimiento y desarrollo.</li>
+        </ul>
+        </p>
+      </section>
+
+    </div>
   
   </section>
   <!--Footer-->
