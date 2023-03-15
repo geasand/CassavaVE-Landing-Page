@@ -30,13 +30,13 @@
     <aside class= "menu">
       <nav>
         <ul>
-          <li><a href="index.html" onclick="clickOnMain()">Inicio</a></li>
+          <li><a onclick="showProducts()">Inicio</a></li>
           <hr>
-          <li><a href="#" onclick="clickOnAbout()">Nosotros</a></li>
+          <li><a onclick="showAbout()">Nosotros</a></li>
           <hr>
-          <li><a href="#" onclick="clickOnProducts()">Productos</a></li>
+          <li><a onclick="showProducts()">Productos</a></li>
           <hr>
-          <li><a href="#" onclick="clickOnServices()">Servicios</a></li>
+          <li><a onclick="showServices()">Servicios</a></li>
         </ul>
       </nav>
 
@@ -125,9 +125,9 @@
   <!--Footer-->
   <footer>
     <section>
-      <a href="#topbar">Ir arriba ⤴</a>
+      <button onclick="topFunction()" id="goUp" title="Ir arriba">Ir arriba</button>
     </section>
-    <p>Desarrollado por Gea Codes - 2022</p>
+    <p>© Gea Codes - 2023</p>
   </footer>
   
   <script src="scripts.js"></script>
