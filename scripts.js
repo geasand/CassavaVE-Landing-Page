@@ -7,54 +7,57 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+/*Show/Hide sections function*/
+'use strict'
 
-/*Show/Hide sections function
-function clickOnMain() {
-    document.getElementById("product").style.display = "flex";
-    document.getElementById("about").style.display = "none";
-    document.getElementById("services").style.display = "none";
+const li    = document.querySelectorAll('.li')
+const block = document.querySelectorAll('.wrapper-section')
+
+//Click en el botón
+li.forEach ( ( cadaLi, i)=>{
+    li[i].addEventListener('click',()=>{
+
+        li.forEach( ( cadaLi, i )=>{
+            li[i].classList.remove('active')
+            block[i].classList.remove('active')
+        })
+
+        li[i].classList.add('active')
+        block[i].classList.add('active')
+
+    })
+})
+
+// Open Modals from the Product cards
+function openLightbox() {
+    document.getElementById('lightbox').style.display = 'block';
 }
+// Close Modals from the Product cards
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+};
 
-function clickOnAbout() {
-    document.getElementById("about").style.display = "block";
-    document.getElementById("product").style.display = "none";
-    document.getElementById("services").style.display = "none";
-}
+//Carrusel
+const container = document.querySelector('.image-container')
+const dot    = document.querySelectorAll('.dot')
 
-function clickOnProducts() {
-    document.getElementById("product").style.display = "flex";
-    document.getElementById("about").style.display = "none";
-    document.getElementById("services").style.display = "none";
-} */
+//Asignar clic
+dot.forEach ( ( eachpoint , i )=> {
+    dot[i].addEventListener('click',()=>{
 
-// Navigate between menu links (Show/Hide sections function)
-var x = document.getElementById("product");
-var y = document.getElementById("about");
-var z = document.getElementById("services");
+        //Saber la posicion
+        let position = i
+        let operation = position * -33.33
+        
+        //Aplicar el transform translate al container
+        container.style.transform = `translateX(${ operation }%)`
+        
+        //Quitar la clase Activo a todos los dots
+        dot.forEach( ( eachpoint , i )=>{
+            dot[i].classList.remove('activo')
+        })
+        //Añadir la clase Activo al dot al que se hizo clic
+        dot[i].classList.add('activo')
 
-function showProducts() {
-    if (!x.classList.contains("show")) {
-            x.classList.add("show");
-            y.classList.remove("show");
-            z.classList.remove("show");
-        } else {
-            x.classList.add("show");
-            y.classList.remove("show");
-            z.classList.remove("show");
-        }
-    }
-
-function showAbout() {
-    if (!y.classList.contains("show")) {
-            y.style.removeProperty('display');
-            y.style.display="block";
-            y.classList.add("show");
-            x.classList.remove("show");
-            x.style.display="none";
-            z.classList.remove("show");
-        } else {
-            y.classList.add("show");
-            x.classList.remove("show");
-            z.classList.remove("show");
-        }
-    }
+    })
+})
